@@ -1,0 +1,200 @@
+*, ::before, ::after
+
+{box-sizing: border-box;}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.wrapper{
+margin: 0 auto;
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.header{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    color: rgb(124, 97, 46);
+    font-size: 3.2em;
+    font-weight: 900;
+}
+
+.main{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(70, 50, 26);
+    
+}
+
+.main-header, .main-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3em;
+    height: 3em;
+
+}
+
+.game-section{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-flow: wrap;
+
+}
+
+ul.input-list{
+    list-style: none;
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    max-width: 80%;
+    max-height: 97%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    overflow: hidden;
+
+}
+
+li{
+    list-style: none;
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin: 0.15em;
+    
+}
+.aside-left{
+    width: 40%;
+    height: 100%;
+}
+
+.section-display{
+width: 20%;
+height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-display .input-list-item{
+    color: antiquewhite;
+    font-size: 2.8em;
+    max-width: min-content;
+    max-height: 100%;
+    text-overflow: ellipsis;
+
+}
+
+.aside-content{
+display: flex;
+width: 40%;
+flex-direction: column;
+align-items: center
+  
+}
+
+.aside-content-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.guess-input{
+    color: black;
+    font-size: 1em;
+    padding: 1em 2em;
+    color: black;
+    background-color: rgb(248, 248, 248);
+    border: none;
+    border-width: 0px;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin-right: 2em;
+}
+
+.guess-input:focus{
+border:0;outline:0;
+outline:none!important;
+}
+
+.guess-button{
+    padding: .5em 1.5em;
+    color: black;
+    background-color: rgb(109, 55, 55);
+    cursor: pointer;
+    border: solid 1px white;
+    border-radius: 1em;
+    margin-right: 2em;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: .5em;
+
+}
+
+.guess-button:active{
+    transform: scale(0.95)
+}
+
+.footer{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 20%;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(124, 97, 46);
+}
+
+.popup-container {
+    position: absolute;
+    bottom: 45%;
+    right: 45%;
+    left: 45%;
+    top: 45%;
+background-color: rgba(34, 34, 34, 0.712);
+border-radius: 2em;
+padding: 0.2em;
+    width: 18em;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    transition: transform 2s ease-in-out;
+    display: none;
+}
+
+.popup-container-message{
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    position: relative;
+    text-align: center;
+}
+
+.popup-container.show{
+    display: inline-block;
+}

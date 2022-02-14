@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <h1>Lewis Carroll Word Puzzle</h1>
+        </header>
+        <main class="main">
+            <header class="main-header">
+                <span id="startWord"></span>
+            </header>
+            <article class="game-section">
+                <aside class="aside-left"></aside>
+                <section class="section-display" id="displayWords">
+                    <ul class="input-list" id="inputList">
+
+                    </ul>
+                    
+                </section>
+                <aside class="aside-content">
+                    <section class="aside-content-input">
+                        <input type="text" class="guess-input" id="inputStartWord" placeholder="Enter your start word">
+                        <button class="guess-button" id="startWordBtn">OK</button>
+                        <input type="text" class="guess-input" id="inputEndWord" placeholder="Enter your end word">
+                        <button class="guess-button" id="endWordBtn">OK</button>
+                        <input type="text" class="guess-input" id="guessInput" placeholder="Type your next word here">
+                        <button class="guess-button" id="guessBtn">Next word</button>
+                    </section>
+                </aside>
+            </article>
+            <div class="popup-container" id="popupContainer">
+                <p class="popup-container-message" id="popupContainerMessage"></p>
+            </div>
+            <footer class="main-footer">
+                <span id="endWord"></span>
+        </main>
+        <footer class="footer">
+            Created by William Löfroth
+        </footer>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
